@@ -22,8 +22,8 @@ func PrintCommandEvent(anyalaticschannel <-chan *slacker.CommandEvent) {
 	}
 }
 func main() {
-	os.Setenv("SLACK_BOT_TOKEN", "xoxb-4584469582227-4584699882722-doJhAud4WIqXFKGWIRb89VOl")
-	os.Setenv("SLACK_APP_TOKEN", "xapp-1-A04H00BHXDL-4578037636534-cd6078a784608e48bd781b04a0a06d219f9a2207b9278ba850bf09e71c3baaf9")
+	os.Setenv("SLACK_BOT_TOKEN", "xoxb-4584469582227-4584699882722-4GJ4QC1fXDLFCJlcVjQojg95")
+	os.Setenv("SLACK_APP_TOKEN", "xapp-1-A04H00BHXDL-4656588089909-2e41ba28169592dbf1477b7fd2594e6482ced21ba2c7b777be82fffdfe42dcf1")
 
 	bot := slacker.NewClient(os.Getenv("SLACK_BOT_TOKEN"), os.Getenv("SLACK_APP_TOKEN"))
 
@@ -36,8 +36,8 @@ func main() {
 			if err != nil {
 				fmt.Println("error")
 			}
-			age := 2022 - yob
-			r := fmt.Sprintf("age is %d", age)
+			age := 2023 - yob
+			r := fmt.Sprintf("Your are  %d year Old", age)
 			response.Reply(r)
 		},
 	})
